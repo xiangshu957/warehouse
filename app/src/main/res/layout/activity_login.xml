@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_30">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/et_login_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_60"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/img_user"
+                    android:drawableBottom="@drawable/drawable_edittext_background_default"
+                    android:hint="请输入用户名"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColorHint="@color/toast_background_color"
+                    android:textCursorDrawable="@drawable/text_cursor_shape"
+                    android:textSelectHandle="@drawable/img_text_handler"
+                    android:textSelectHandleLeft="@drawable/img_text_handler"
+                    android:textSelectHandleRight="@drawable/img_text_handler" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/et_login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_60"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/img_pwd"
+                    android:drawableBottom="@drawable/drawable_edittext_background_default"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColorHint="@color/toast_background_color"
+                    android:textCursorDrawable="@drawable/text_cursor_shape"
+                    android:textSelectHandle="@drawable/img_text_handler"
+                    android:textSelectHandleLeft="@drawable/img_text_handler"
+                    android:textSelectHandleRight="@drawable/img_text_handler" />
+
+                <Switch
+                    android:id="@+id/ib_pwd_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:checked="false" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb_remember_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="记住密码" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.lihang.smartloadview.SmartLoadingView
+                    android:id="@+id/sl_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_48"
+                    android:text="登录"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_20"
+                    app:background_cannotClick="#bcb6b6"
+                    app:background_error="@color/red"
+                    app:background_normal="@color/blue"
+                    app:cornerRaius="@dimen/dp_25"
+                    app:errorMsg="登陆失败"
+                    app:speed="500" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

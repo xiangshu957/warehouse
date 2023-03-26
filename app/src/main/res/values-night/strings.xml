@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PdaScan</string>
+
+
+    <string name="home_menu0">下载数据</string>
+    <string name="home_menu1">开始扫描</string>
+    <string name="home_menu2">数据查询</string>
+    <string name="home_menu3">系统设置</string>
+
+</resources>
